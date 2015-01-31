@@ -1,9 +1,285 @@
-<!DOCTYPE html/>
-<html>
-	<head>
-		<title>My Page</title>
-	</head>
-	<body>
-		
-	</body>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divers Treasure</title>
+    <!--CSS added here-->
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/game.css" rel="stylesheet" />
+</head>
+<body onload="main()">
+    <!--All the slides start here!-->
+    <div id="impress">
+        <!--Starting Slide... Let the Game begin-->
+        <div id="start" class="step slide">
+            <div class="slide-text">
+                <p>You enter the water and begin to dive downward. You come across two caves. Which one will you choose?</p>
+                <div class="options">
+                    <a href="#left">Left Cave</a>
+                    <a href="#right">Right Cave</a>
+                </div>
+            </div>
+        </div>
+        <!--Left Cave-->
+        <div id="left" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p>You enter the cave on the left, but you don't see any treasure.</p>
+                <div class="options">
+                    <a href="#deeper">Go Deeper</a>
+                    <a href="#dig">Dig Around</a>
+                </div>
+            </div>
+        </div>
+            <!--Go Deeper into the Cave-->
+            <div id="deeper" class="step slide" data-x="3000">
+                <div class="slide-text">
+                    <p>You move deeper into the cave. It gets darker and darker, but you see a glow up ahead.</p>
+                    <div class="options">
+                        <a href="#back">Turn Back</a>
+                        <a href="#glowing">See what is Glowing</a>
+                    </div>
+                </div>
+            </div>
+                <!--Turn Back-->
+                <div id="back" class="step slide" data-x="4500">
+                    <div class="slide-text">
+                        <p>You turn around to head back through the tunnel, but it's to dark to see where the tunnel even is anymore!</p>
+                        <div class="options">
+                            <a href="#forward">Continue Forward</a>
+                            <a href="#wander">Try your luck and wander around</a>
+                        </div>
+                    </div>
+                </div>
+                    <!--Continue Forward-->
+                    <div id="forward" class="step slide" data-x="3500" data-y="1500">
+                        <div class="slide-text">
+                            <p>You keep going forward in hope to find the exit. You just keep swimming and swimming. You grow tired and decide to rest on a nearby rock. OUCH! You feel a sharp pain in your rear. You jump up to see what it was, and you see a rock fish swim away. unfortunately, those are very dangerous, and you feel your eyes close as the fish calmly swims away.</p>
+                            <div class="options">
+                                <a href="#start">Try again?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Try your luck and wander around-->
+                    <div id="wander" class="step slide" data-x="5500" data-y="3000">
+                        <div class="slide-text">
+                            <p>You wander around and try to find your way back to your ship before it's to late. You start to get worried that you'll never find your way back. Your worry leads to you panicking, and before you know it you've run out of oxygen snf slowly drift into darkness as your body gently lands in the soft sand below.</p>
+                            <div class="options">
+                                <a href="#start">Try to find your way again?</a>
+                            </div
+                        </div>
+                    </div>
+
+                <!--See what is glowing-->
+                <div id="glowing" class="step slide" data-x="4500" data-y="-1500">
+                    <div class="slide-text">
+                        <p>You decide to investigate what's glowing from the tunnel. You move slowly down the tunnely and turn the corner. You find a huge room of gold just sitting there. It must have been a secret pirate stash.</p>
+                        <div class="options">
+                            <a href="#enjoy">Take a second to enjoy the view</a>
+                            <a href="#knees">Fall down to your knees and bask in the glorious view</a>
+                        </div>
+                    </div>
+                </div>
+                    <!--Take a second-->
+                    <div id="enjoy" class="step slide" data-x="6000" data-y="-1500">
+                        <div class="slide-text">
+                            <p>You take a second and admire the view. You hover there, above the water in awe of the shimmering golden glow that shines off of the mountains of treasure and gold. 
+                            Your mind starts to think about how life with all this treasure will be like. No debt, no more money problems, no more second hand car. You're rich now and everything will be alright now. As your mind races along with various thoughts, you feel a tug on your leg as you begin to slowly descend. You look down and see a gigantic octopus pulling you towards it's wide open beak.</p>
+                            <div class="options">
+                                <a href="#free">Try to swim and free yourself</a>
+                                <a href="#kill">Swim towards it and try to kill it</a>
+                            </div>
+                        </div>
+                    </div>
+                        <!--Try to swim and free yourself-->
+                        <div id="free" class="step slide" data-x="4500" data-y="-3000">
+                            <div class="slide-text">
+                                <p>You struggle to swim away, and just when you start to make progress, the octopus tightens its grip and pulls you down. Its no use, the octopus is just to strong. You're outmatched, and unfortunately, out of time...</p><br />
+                                <div class="options">
+                                    <a href="#start">Try your luck again?</a>
+                                </div>
+                            </div>
+                        </div> 
+               
+                        <!--Try to kill it-->
+                        <div id="kill" class="step slide" data-x="6000" data-y="-3000">
+                            <div class="slide-text">
+                                <p>You dash towards it and begin to hit it again and again in it's head. Unfortunately for you, it seems to enjoy this. Its had enough though so it wraps its tentecles around your flailing arms and stops you from moving. Now it's just a matter of time.</p>
+                                <div class="options">
+                                    <a href="#start">Today was not your day, but maybe tomorrow?</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    <!--Fall down to your knees-->
+                    <div id="knees" class="step slide" data-x="4500" data-y="1500">
+                        <div class="slide-text">
+                            <p>You fall down to your knees in awe for the majestic sight of the mountain of gold. You're rish now! Nothing else matters, nothing! Not even the giant octopus that
+                            is slowly pulling you into it's mouth. Nothing matters, because you're rich.</p>
+                            <div class="options">
+                                <a href="#start">Back to the start?</a>
+                            </div>
+                        </div>
+                    </div>
+
+            <!--Dig around a bit-->
+            <div id="dig" class="step slide" data-x="3000" data-y="-1500">
+                <div class="slide-text">
+                    <p>You dig into the ground and start to uncover something. You're unsure if it's treasure, or if it's just a rock. All of a sudden you hear a woosh behind you!</p>
+                    <div class="options">
+                        <a href="#turn">Turn Around</a>
+                        <a href="#dash">Dash for the nearest tunnel</a>
+                    </div>
+                </div>
+            </div>
+                <!--Turn around to see what it was-->
+                <div id="turn" class="step slide" data-x="10000">
+                    <div class="slide-text">
+                        <p>You turn around and see that it's just a small yellow fish. You let out a sigh of relief and a nervous giggle. Then you notice a faint glow behind the fish in the distance.</p>
+                        <div class="options">
+                            <a href="#forget">Forget it, it is probably nothing</a>
+                            <a href="#emptyhanded">See what it is. You don't want to leave empty handed</a>
+                        </div>
+                    </div>
+                </div>
+                    <!--Forget it, its probably nothing-->
+                    <div id="forget" class="step slide" data-x="10000" data-y="-1500">
+                        <div class="slide-text">
+                            <p>You forget about that glow and continue to dig around for anything of value. Now you have a snog stuck in your head and you begin to sing it to yourself. "Turn around, every now and then I get a little be lonely and you're never coming around". Total Eclipse of the Heart, great song you think to yourself. Just then you uncover a small golden statue. You decide that's enough for one day and head back up to the ship. Once you're back onboard, you have one last decision to make...</p>
+                            <div class="options">
+                                <a href="#refill">Refill your tank and go back down again</a>
+                                <a href="#home">Go Home</a>
+                            </div>
+                        </div>
+                    </div>
+                        <!--Refill your tank-->
+                        <div id="refill" class="step slide" data-x="8500" data-y="-1500">
+                            <div class="slide-text">
+                                <p>You refill your tanks and prepare to go back in again for more treasure.</p>
+                                <div class="options">
+                                    <a href="#start">Dive back down</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Go Home Forest-->
+                        <div id="home" class="step slide" data-x="10000" data-y="1500">
+                            <div class="slide-text">
+                                <p>You got some treaure from this dive and it will help pay off your debt. Good find, nice place, but I don't think it's worth a revisit.</p>
+                            </div>
+                        </div>
+                    <!--You don't want to leave empty handed-->
+                    <div id="emptyhanded" class="step slide" data-x="11500">
+                        <div class="slide-text">
+                            <p>You decide to go investigate the glow, because anything is better then going deeper into that creepy cave. Except for this case, that glow turns out to be radioactve material that has been dumped here and is now leaking. As you slowly die of radiation posioning, you wonder why there's a random radioactive container here.</p>
+                            <div class="options">
+                                <a href="#start">Did you want to try again?</a>
+                            </div>
+                        </div>
+                    </div>
+                <!--Dash into a nearby tunnel-->
+                <div id="dash" class="step slide" data-x="3000" data-y="3000">
+                    <div class="slide-text">
+                        <p>You dash into the near by tunnel and you instantely feel safer here. You turn around to see what made that sound and see just a small little fish. Then, you feel a nudge in your back. You slowly turn around to see a wall of teeth infront of you. They slowly open wide and all you can think of is that little fish.</p>
+                        <div class="options">
+                            <a href="#start">Next time, look before you leap</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+        <!--Right Cave-->
+        <div id="right" class="step slide" data-x="-1500">
+            <div class="slide-text">
+                <p>A shallow and dim lit cave is found</p>
+                <div class="options">
+                    <a href="#goBack">Go Back</a>
+                    <a href="#feel">Feel Around</a>
+                </div>
+            </div>
+        </div>
+            <!--Go Back-->
+            <div id="goBack" class="step slide" data-x="-1500" data-y="1500">
+                <div class="slide-text">
+                    <p>You started to head back to the boat, but then you feel a pain in your waist. You look down, and see a shark bite down on your waist. Then you see nothing.</p>
+                    <div class="options">
+                        <a href="#start">Try not to be Shark food next time</a>
+                    </div>
+                </div>
+            </div>
+            <!--Feel Around-->
+            <div id="feel" class="step slide" data-x="-1500" data-y="-1500">
+                <div class="slide-text">
+                    <p>You feel around the cave walls until you find what feels like a lever.</p>
+                    <div class="options">
+                        <a href="#lever">Pull The Lever</a>
+                        <a href="#move">Probably does nothing, move along</a>
+                    </div>
+                </div>
+            </div>
+                <!--Lever-->
+                <div id="lever" class="step slide" data-x="-3000">
+                    <div class="slide-text">
+                        <p>You pull the lever and a small door opens up. As you start to move towards the newly opened hole, you see a dark shape slowly glide through the water towards you.</p>
+                        <div class="options">
+                            <a href="#duck">Duck into the hole quickly</a>
+                            <a href="#safety">Head back to the saftey of the ship</a>
+                        </div>
+                    </div>
+                </div>
+                    <!--Duck into the hole Quickly!-->
+                    <div id="duck" class="step slide" data-x="-3000" data-y="-1500">
+                        <div class="slide-text">
+                            <p>You quickly duck into the newly opened hole. The doorway shuts quickly afterwards. You seem safe for now... Except now your only known exit is sealed. </p>
+                            <div class="options">
+                                <a href="#panic">Start to Panic!</a>
+                                <a href="#calm">Stay calm, there's always a way out</a>
+                            </div>
+                        </div>
+                    </div>
+                        <!--Start to Panic-->
+                        <div id="panic" class="step slide" data-x="-4500" data-y="-1500">
+                            <div class="slide-text">
+                                <p>You start to panic and franatically swim around. You don't notice that your oxygen is running low and you slowly get sleepy, and eventually, you see nothing, and feel nothing. Goodnight little diver, goodnight.</p>
+                                <div class="options">
+                                    <a href="#panic">Wake up and try again!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Stay calm, there's always a way out, the movies say so-->
+                        <div id="calm" class="step slide" data-x="-4500">
+                            <div class="slide-text">
+                                <p>You stay calm because there's always another way out. You slowly move around the cave and try to find a hole, or another lever. You're at it for what seems like hours until you look at your wrist. The oxygen gauge reads empty, and you realize, there's not always a way out.</p>
+                                <div class="options">
+                                    <a href="#panic">Movies lie, try again?</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!--Head back for the ship-->
+                    <div id="safety" class="step slide" data-x="-3000" data-y="1500">
+                        <div class="slide-text">
+                            <p>You start to head back to the ship in a panic. There's just a few problems. The cave is to dark to see the exit form, and you can't find a way out. The other problem is that the shark already has you, and you can't escape.</p>
+                            <div class="options">
+                                <a href="#start">Bring a glow stick next time</a>
+                            </div>
+                        </div>
+                    </div>
+                <!--Move along-->
+                <div id="move" class="step slide" data-x="0" data-y="1500">
+                    <div class="slide-text">
+                        <p>You feel around the cave more, until you come to a spot that doesn't feel like the rest. It's soft and smooth... and moving. You move back suddenly, and the shark charges at you! The last thing you think of is, "I wonder what that lever does?"</p>
+                        <div class="options">
+                            <a href="#start">Best try that lever next time</a>
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+
+    <!--Javascript added here-->
+    <script src="Scripts/lib/impress.js"></script>
+    <script src="Scripts/game.js"></script>
+</body>
 </html>
