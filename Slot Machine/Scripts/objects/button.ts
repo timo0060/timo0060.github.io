@@ -1,8 +1,13 @@
-﻿var objects;
-(function (objects) {
-    var Button = (function () {
+﻿module objects {
+    export class Button {
+
+        // PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++
+        private _buttonImage: createjs.Bitmap;
+        private _x: number;
+        private _y: number;
+        private _disabled: boolean;
         //The constructor for this class
-        function Button(path, x, y, disabled) {
+        constructor(path: string, x: number, y: number, disabled: boolean) {
             this.setX(x);
             this.setY(y);
             this.setDisabled(disabled);
@@ -11,50 +16,50 @@
             this._buttonImage.x = this.getX();
             this._buttonImage.y = this.getY();
             this._buttonImage.addEventListener("mouseover", this._buttonOver);
-            this._buttonImage.addEventListener("mouseout", this._buttonOut);
+            this._buttonImage.addEventListener("mouseout", this._buttonOut);           
         }
+
         // PUBLIC PROPERTIES
-        Button.prototype.getImage = function () {
+        public getImage(): createjs.Bitmap {
+
             return this._buttonImage;
-        };
+        }
 
-        Button.prototype.getX = function () {
+        public getX(): number {
             return this._x;
-        };
+        }
 
-        Button.prototype.isDisabled = function () {
+        public isDisabled(): boolean {
             return this._disabled;
-        };
+        }
 
-        Button.prototype.getY = function () {
+        public getY(): number {
             return this._y;
-        };
+        }
 
-        Button.prototype.setX = function (x) {
+        public setX(x: number) {
             this._x = x;
-        };
+        }
 
-        Button.prototype.setY = function (y) {
+        public setY(y: number) {
             this._y = y;
-        };
+        }
 
         //Used to disable, or enable the button
-        Button.prototype.setDisabled = function (disabled) {
+        public setDisabled(disabled: boolean) {
             this._disabled = disabled;
-        };
+        }
 
         // EVENT HANDLERS
         //Fires when the mouse leaves a button, sets it back to a solid image
-        Button.prototype._buttonOut = function (event) {
+        private _buttonOut(event: createjs.MouseEvent): void {
             event.currentTarget.alpha = 1.0;
-        };
-
+        }
         //When a mouse is hovering of the button, make it shy and go half way to invisibility
-        Button.prototype._buttonOver = function (event) {
+        private _buttonOver(event: createjs.MouseEvent): void {
             event.currentTarget.alpha = 0.5;
-        };
-        return Button;
-    })();
-    objects.Button = Button;
-})(objects || (objects = {}));
-//# sourceMappingURL=Button.js.map
+        }
+
+    }
+
+}

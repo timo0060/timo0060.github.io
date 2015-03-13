@@ -1,0 +1,5 @@
+C:\Users\Tim\Desktop\COMP2068-Assignment2-master\Slot Machine\bin\Slot Machine.dll.config
+C:\Users\Tim\Desktop\COMP2068-Assignment2-master\Slot Machine\bin\Slot Machine.dll
+C:\Users\Tim\Desktop\COMP2068-Assignment2-master\Slot Machine\bin\Slot Machine.pdb
+C:\Users\Tim\Desktop\COMP2068-Assignment2-master\Slot Machine\obj\Debug\Slot Machine.dll
+C:\Users\Tim\Desktop\COMP2068-Assignment2-master\Slot Machine\obj\Debug\Slot Machine.pdb

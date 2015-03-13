@@ -1,4 +1,4 @@
-﻿/// <reference path="objects/button.ts" />
+﻿/// <reference path="objects/Button.ts" />
 
 
 //Declare the Canvas and stage
@@ -322,7 +322,7 @@ function quit() {
 
 //This function is called to update the whole application and set the GUI elements, such as the background, reels, and buttons. 
 function updateUI() {
-    background = new createjs.Bitmap("assets/images/Slot-Machine.png");
+    background = new createjs.Bitmap("assets/images/Slot-machine.png");
     game.addChild(background);
 
     initReel();

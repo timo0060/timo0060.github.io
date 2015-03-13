@@ -1,4 +1,4 @@
-﻿/// <reference path="objects/button.ts" />
+﻿/// <reference path="objects/Button.ts" />
 //Declare the Canvas and stage
 var canvas;
 var stage;
